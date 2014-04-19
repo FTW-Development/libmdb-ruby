@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    mdb (0.0.1)
+      nice-ffi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.9.3)
+    nice-ffi (0.4)
+      ffi (>= 0.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mdb!

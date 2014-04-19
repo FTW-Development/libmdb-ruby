@@ -1,5 +1,6 @@
-require 'rubygems'
-require 'libmdbtools'
+#require 'rubygems'
+require 'mdb/version'
+require 'mdb/libmdbtools'
 
 # This extends the basic libmdb mapping defined in module MDB libmdbtools.rb
 module MDB
