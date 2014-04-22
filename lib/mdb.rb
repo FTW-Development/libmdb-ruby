@@ -1,13 +1,13 @@
 #require 'rubygems'
-require 'mdb/version'
-require 'mdb/libmdbtools'
+require_relative 'mdb/version'
+require_relative 'mdb/libmdbtools'
 
 # This extends the basic libmdb mapping defined in module MDB libmdbtools.rb
 module MDB
   class DB
     def initialize(filename_or_pointer, flags=:MDB_NOFLAGS)
       return super(filename_or_pointer) if filename_or_pointer.is_a? FFI::Pointer
-      LibMDB::init
+      #LibMDB::init
       super LibMDB::open(filename_or_pointer, flags)
     end
 

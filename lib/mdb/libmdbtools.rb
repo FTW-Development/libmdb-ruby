@@ -1,5 +1,5 @@
 require 'nice-ffi'
-require 'mdb/libglib'
+require_relative 'libglib'
 
 module MDB
   extend NiceFFI::Library
